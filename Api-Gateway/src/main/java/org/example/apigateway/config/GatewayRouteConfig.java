@@ -15,7 +15,7 @@ public class GatewayRouteConfig {
 
                 .route("user-route", r -> r
                         .path("/api/users/**")
-                        .uri("http://localhost:8083")
+                        .uri("lb://user-service")
                 )
 
 
